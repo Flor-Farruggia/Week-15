@@ -1,4 +1,4 @@
-class cartFlow {
+class CartFlow {
     get backButton() {
         return $('#back-to-products')
     }
@@ -46,4 +46,4 @@ class cartFlow {
         await this.backHomeButton.click();
     }
 }
-export default new cartFlow();
+export default new CartFlow();

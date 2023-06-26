@@ -16,7 +16,7 @@
   },
   "scripts": {
     "wdio": "wdio run ./wdio.conf.js",
-    "allure-report": "allure generate --clean allure'results && allure open"
+    "allure-report": "allure generate --clean allure-results && allure open"
   },
   "dependencies": {
     "allure-commandline": "^2.22.4"

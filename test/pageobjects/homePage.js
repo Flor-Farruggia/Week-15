@@ -1,4 +1,4 @@
-class homeHeaderFooter {
+class HomeHeaderFooter {
     get logoTitle() {
         return $('#header_container > div.primary_header > div.header_label > div');
     }
@@ -18,4 +18,4 @@ class homeHeaderFooter {
         await this.cartIcon.click();
     }
 }
-export default new homeHeaderFooter();
+export default new HomeHeaderFooter();

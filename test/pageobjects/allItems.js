@@ -1,4 +1,4 @@
-class allItems {
+class AllItems {
     get firstItemTitle() {
         return $('#inventory_container > div > div:nth-child(1) > div.inventory_item_description > div.inventory_item_label > #item_4_title_link > div');
     }
@@ -152,4 +152,4 @@ class allItems {
     }
 }
 
-export default new allItems();
+export default new AllItems();
