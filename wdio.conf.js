@@ -126,7 +126,7 @@ export const config = {
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
 
-    reporters: ["spec", ['allure', {outputDir: 'allure-results', disableWebdriverScreenshotsReporting: true},]],
+    reporters: ["spec", ['allure', {outputDir: 'allure-results', disableWebdriverScreenshotsReporting: true,}]],
         // Options to be passed to Jasmine.
     jasmineOpts: {
         // Jasmine default timeout
@@ -139,7 +139,6 @@ export const config = {
             // do something
         }
     },
-    
     //
     // =====
     // Hooks
@@ -256,7 +255,7 @@ export const config = {
     },
 
     afterTest: async function(test, context, { error, result, duration, passed, retries }) {
-        if (!error) {
+        if (!passed) {
             await browser.takeScreenshot();
         }
     },

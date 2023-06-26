@@ -15,7 +15,8 @@
     "wdio-wait-for": "^3.0.4"
   },
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.js"
+    "wdio": "wdio run ./wdio.conf.js",
+    "allure-report": "allure generate --clean allure'results && allure open"
   },
   "dependencies": {
     "allure-commandline": "^2.22.4"
